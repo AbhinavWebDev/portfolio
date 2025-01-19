@@ -80,6 +80,7 @@ const Work = ({ isDarkMode }) => {
           }
           alt="rightarrow"
           className="w-4"
+          
         />
       </motion.a>
     </motion.div>
