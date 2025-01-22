@@ -27,7 +27,7 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo"
       >
-        Frontend Developer based in india
+        React Developer based in india
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -35,7 +35,7 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl max-auto font-Ovo"
       >
-        I’m a Frontend Developer from Kerala, India with 2 years of experience,
+        I’m a React Developer from Kerala, India with 2 years of experience,
         specializing in building responsive and user-friendly web applications.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
@@ -54,7 +54,7 @@ const Header = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
           className="px-10 py-3 border border-grey-500 rounded-full flex items-center gap-2 dark:text-black dark:bg-white"
-          href="/sample-resume.pdf"
+          href="/React Developer Abhinav A.pdf"
           download={""}
         >
           my resume <Image src={assets.download_icon} alt="" className="w-4" />

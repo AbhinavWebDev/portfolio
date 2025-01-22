@@ -66,7 +66,7 @@ const Work = ({ isDarkMode }) => {
           </motion.div>
         ))}
       </motion.div>
-      <motion.a
+      {/* <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 1.1, duration: 0.5 }}
@@ -81,7 +81,7 @@ const Work = ({ isDarkMode }) => {
           alt="rightarrow"
           className="w-4"
         />
-      </motion.a>
+      </motion.a> */}
     </motion.div>
   );
 };
