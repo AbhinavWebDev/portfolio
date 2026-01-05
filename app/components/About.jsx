@@ -10,21 +10,21 @@ const About = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="about"
-      className="w-full px-[12%] py-10 scroll-mt-20"
+      className="w-full px-[12%] py-5 scroll-mt-20"
     >
-      <motion.h4
+      {/* <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
         Introduction
-      </motion.h4>
+      </motion.h4> */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+                className="text-center md:text-5xl text-4xl lg:text-5xl font-Ovo"
       >
         About me
       </motion.h2>
@@ -32,9 +32,10 @@ const About = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
+        // className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
+        className="flex w-full flex-col items-center gap-20 my-20"
       >
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -45,24 +46,27 @@ const About = ({ isDarkMode }) => {
             alt="user"
             className="w-full rounded-3xl"
           />
-        </motion.div>
+        </motion.div> */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2xl font-Ovo">
-            I am an experienced React developer with 2 years of professional
-            expertise in the field. Throughout my career, I have had the
-            privilege of collaborating with prestigious organizations,
-            contributing to their success and growth.
+          <p className="mb-2 max-w-4xl font-Ovo">
+           I am a Full Stack Developer with over 3 years of experience building and deploying scalable, production-ready web applications using the MERN stack. My expertise includes React.js, Node.js, Express.js, MongoDB, Redis, and designing clean, efficient RESTful APIs that power high-performance applications.
           </p>
-          <motion.ul
+          <p className="mb-2 max-w-4xl font-Ovo">
+            I have strong hands-on experience with Docker, CI/CD pipelines using GitHub Actions, and AWS services such as EC2, S3, and ECR, enabling reliable deployments and scalable infrastructure. I’ve worked extensively on secure authentication systems, real-time applications, and AI-powered features using prompt engineering and generative AI.
+          </p>
+          <p className="mb-10 max-w-4xl font-Ovo">
+            I am passionate about writing clean, maintainable code, optimizing application performance, and collaborating in Agile environments. I take ownership of features end-to-end, actively participate in code reviews, and focus on delivering solutions that are both technically sound and aligned with business goals.
+          </p>
+          {/* <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
+            className="grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-4xl"
           >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <motion.li
@@ -107,7 +111,7 @@ const About = ({ isDarkMode }) => {
                 <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
               </motion.li>
             ))}
-          </motion.ul>
+          </motion.ul> */}
         </motion.div>
       </motion.div>
     </motion.div>

@@ -56,31 +56,31 @@ const SlideTabs = ({ isDarkMode, setIsDarkMode }) => {
             ? ""
             : " bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}
         >
-          <Tab setPosition={setPosition}>
             <a className="font-Ovo" href="#top">
+          <Tab setPosition={setPosition}>
               Home
-            </a>
           </Tab>
-          <Tab setPosition={setPosition}>
+            </a>
             <a className="font-Ovo" href="#about">
+          <Tab setPosition={setPosition}>
               About me
-            </a>
           </Tab>
-          <Tab setPosition={setPosition}>
-            <a className="font-Ovo" href="#services">
-              Services
             </a>
-          </Tab>
+            <a className="font-Ovo" href="#skills">
           <Tab setPosition={setPosition}>
+              Skills
+          </Tab>
+            </a>
             <a className="font-Ovo" href="#work">
-              My Work
-            </a>
-          </Tab>
           <Tab setPosition={setPosition}>
-            <a className="font-Ovo" href="#contact">
-              Contact me
-            </a>
+              My Work
           </Tab>
+            </a>
+            <a className="font-Ovo" href="#contact">
+          <Tab setPosition={setPosition}>
+              Contact me
+          </Tab>
+            </a>
           <Cursor position={position} />
         </ul>
         <div className="flex items-center gap-4">
@@ -140,8 +140,8 @@ const SlideTabs = ({ isDarkMode, setIsDarkMode }) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#services">
-              Services
+            <a className="font-Ovo" onClick={closeMenu} href="#skills">
+              Skills
             </a>
           </li>
           <li>

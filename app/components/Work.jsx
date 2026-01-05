@@ -12,19 +12,19 @@ const Work = ({ isDarkMode }) => {
       id="work"
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
-      <motion.h4
+      {/* <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.5 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
         My portfolio
-      </motion.h4>
+      </motion.h4> */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+                className="text-center md:text-5xl text-4xl lg:text-5xl font-Ovo"
       >
         My latest work
       </motion.h2>
@@ -35,8 +35,8 @@ const Work = ({ isDarkMode }) => {
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
         {" "}
-        Welcome to my web developement portfolio! Explore a collection of
-        projects showcasing my expertise in front-end development.
+      Production-grade Full stack applications built from UI to cloud.
+Emphasizing performance, security, and scalability.
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}
@@ -59,9 +59,9 @@ const Work = ({ isDarkMode }) => {
                 </h2>
                 <p className="text-sm text-gray-700">{project.description}</p>
               </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+              {/* <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
                 <Image src={assets.send_icon} alt="sendicon" className="w-5" />
-              </div>
+              </div> */}
             </div>
           </motion.div>
         ))}

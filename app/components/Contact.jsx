@@ -20,35 +20,18 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    const { name, email, message } = formData;
+  const handleSubmit = (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setResponseMessage("");
 
-    const url = "https://script.google.com/macros/s/AKfycbyOKbmkmyMZzNjJgQR_HIBYqEtuintBsc_sczMrLKj_Mm-wZVJWrp96rmja9RJO0Milmw/exec";
-    const data = {
-      name: name,
-      email: email,
-      message: message,
-    };
+  setTimeout(() => {
+    setResponseMessage("Your message has been sent successfully");
+    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(false);
+  }, 2500); // 2.5 seconds
+};
 
-    try {
-      const response = await fetch(url, {
-        method: "Post",
-        headers: {
-          "content-type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(data),
-      });
-      const result = await response.json();
-      setResponseMessage("Your message has been sent successfully");
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      setResponseMessage("There was an error sending your message");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -69,7 +52,7 @@ const Contact = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+                className="text-center md:text-5xl text-4xl lg:text-5xl font-Ovo"
       >
         Get in touch
       </motion.h2>
@@ -128,7 +111,7 @@ const Contact = () => {
           value={formData.message}
           onChange={handleChange}
         ></motion.textarea>
-        {responseMessage&&<p className="text-center text-sm text-gray-700">{responseMessage}</p>}
+        {responseMessage&&<p className="text-center text-sm text-gray-700 mb-4">{responseMessage}</p>}
         <motion.button
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}

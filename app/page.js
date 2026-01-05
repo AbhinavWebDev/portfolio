@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import SlideTabs from "./components/SlideTabs";
 import Work from "./components/Work";
+import Skills from "./components/Skills";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -37,7 +38,8 @@ export default function Home() {
       {/* <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} /> */}
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
-      <Services isDarkMode={isDarkMode} />
+      <Skills isDarkMode={isDarkMode} />
+      {/* <Services isDarkMode={isDarkMode} /> */}
       <Work isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
