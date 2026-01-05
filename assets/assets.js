@@ -162,23 +162,23 @@ export const workData = [
  {
   title: "SNK Jewels",
   description: "Digital Gold Platform",
-  bgImage: "/work_snk.png",
+  bgImage: "/portfolio/work_snk.png",
 },
 
 {
   title: "Asset Glance",
   description: "Enterprise ERP System",
-  bgImage: '/work_assetglance.png',
+  bgImage: '/portfolio/work_assetglance.png',
 },
 {
   title: "ZEEQR",
   description: "Smart Digital Cards",
-  bgImage: '/work_zeeqr.png',
+  bgImage: '/portfolio/work_zeeqr.png',
 },
 {
   title: "Amber Aroma",
   description: " Ecommerce Store",
-  bgImage: "/work_amber.png",
+  bgImage: "/portfolio/work_amber.png",
 },
 
 
