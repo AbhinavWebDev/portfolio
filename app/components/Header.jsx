@@ -53,7 +53,7 @@ const Header = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
           className="px-10 py-3 border border-grey-500 rounded-full flex items-center gap-2 dark:text-black dark:bg-white"
-          href="/React Developer Abhinav A.pdf"
+          href="/Abhinav A Resume.pdf"
           download={""}
         >
           my resume <Image src={assets.download_icon} alt="" className="w-4" />
